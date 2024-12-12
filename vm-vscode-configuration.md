@@ -25,3 +25,10 @@ ip address
 # Host: use vscode remote ssh plugin
 ssh USER@ADDR
 ```
+
+## 4. Q&A
+### Q1:host cannot ping to VM, while VM can ping to host, what should I do?
+1. Reset the VMnet8 network adapter, make sure it uses the *auto-assigned address*;
+2. then modify the DHCP settings in *Virtual Web Editor*, and set the maximal rent time (63 days).
+
+
