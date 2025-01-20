@@ -33,3 +33,10 @@ ssh USER@ADDR
 
 ### Q2: vscode freezes at "setting vscode server" (wget) ?
 delete `~/.vscode-server`, there are path conflicts.
+
+### Q3: couldn't connect to wire or wifi after reboot
+restarting the network manager usually helps
+```bash
+sudo nmcli network off
+sudo nmcli network on
+```
